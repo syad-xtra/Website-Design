@@ -1,6 +1,13 @@
 body{
+    text-align: center;
     font-size: 48px;
     color: magenta;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
+    text-decoration: underline dotted;
+}
+
+ul, ol{
+    display: inline-block;
+    text-align: left;
 }
