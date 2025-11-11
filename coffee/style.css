@@ -65,15 +65,22 @@ main{
 .gap-2{gap: var(--space-2);}
 .gap-3{gap: var(--space-3);}
 
-.box{
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-    box-shadow: 0 0.1rem 0.2rem 0.2rem rgba(54, 48, 41, 0.2);
+.d-flex{display: flex;}
+.flex-between{justify-content: space-between;}
+.left-align{text-align: left;}
+
+.grid{display: grid;}
+
+.grid-2col{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3col{
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 /*************************** SWATCHES ***************************/
 .swatches{
-    display: flex;
     justify-content: center;
 }
 
