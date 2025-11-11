@@ -78,7 +78,6 @@ main{
 .grid-3col{
     grid-template-columns: 1fr 2fr 1fr;
 }
-
 /*************************** SWATCHES ***************************/
 .swatches{
     justify-content: center;
@@ -98,4 +97,36 @@ main{
 
 .swatch .swatch-name{
     text-align: center;
+}
+/*************************** BUTTONS ***************************/
+.btn{
+    border: none;
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.btn-secondary{
+    background-color: var(--muted);
+    color: var(--dark);
+}
+
+.link{
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.link:hover{
+    color: var(--dark);
 }
