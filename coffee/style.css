@@ -6,7 +6,15 @@
     --primary: #7b4b2d;
     --light: #ffffff;
     --dark: #363029;
-    --muted: #f8f6f5;
+    --muted: #efe1cb;
+
+    --font-normal: Roboto, Arial sans-serif;
+    --font-heading: "Noto Serif", serif;
+
+    --space-0: 0;
+    --space-1: 0.5rem; /*8 px*/
+    --space-2: 1rem; /*16 px*/
+    --space-3: 2rem; /*32 px*/
 }
 
 *{
@@ -15,19 +23,19 @@
 }
 
 body{
-    font-family: Roboto, Arial sans-serif;
+    font-family: var(--font-normal);
     text-align: center;
     line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: "Noto Serif", serif;
+    font-family: var(--font-heading);
     margin-bottom: 0.5rem;
 }
 
 main{
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 /*************************** COLORS ***************************/
@@ -41,11 +49,32 @@ main{
 .text-dark{color: var(--dark);}
 .text-muted{color: var(--muted);}
 
+/*************************** SPACING ***************************/
+.m-0{margin: var(--space-0);}
+.m-1{margin: var(--space-1);}
+.m-2{margin: var(--space-2);}
+.m-3{margin: var(--space-3);}
+
+.p-0{padding: var(--space-0);}
+.p-1{padding: var(--space-1);}
+.p-2{padding: var(--space-2);}
+.p-3{padding: var(--space-3);}
+
+.gap-0{gap: var(--space-0);}
+.gap-1{gap: var(--space-1);}
+.gap-2{gap: var(--space-2);}
+.gap-3{gap: var(--space-3);}
+
+.box{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 0.1rem 0.2rem 0.2rem rgba(54, 48, 41, 0.2);
+}
+
 /*************************** SWATCHES ***************************/
 .swatches{
     display: flex;
     justify-content: center;
-    gap: 1rem;
 }
 
 .swatch{
@@ -54,7 +83,7 @@ main{
 }
 
 .swatch .swatch-value{
-    width: 6rem;
+    width: 8rem;
     aspect-ratio: 1 / 1;
     border-radius: 100%;
     box-shadow: 0 0.1rem 0.2rem 0.2rem rgba(54, 48, 41, 0.2);
