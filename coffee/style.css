@@ -4,9 +4,13 @@
 /* Variables weeeeeee */
 :root {
     --primary: #7b4b2d;
+    --primary-light: #8c5c3c;
+    --primary-dark: #4b3637;
     --light: #ffffff;
     --dark: #363029;
     --muted: #efe1cb;
+    --muted-light: #fff3eb;
+    --muted-dark: #bcb1a8;
 
     --font-normal: Roboto, Arial sans-serif;
     --font-heading: "Noto Serif", serif;
@@ -15,9 +19,12 @@
     --space-1: 0.5rem; /*8 px*/
     --space-2: 1rem; /*16 px*/
     --space-3: 2rem; /*32 px*/
+
+    --shadow-dark: 0 0.1rem 0.2rem 0.2rem rgba(54, 48, 41, 0.2);
 }
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -78,6 +85,10 @@ main{
 .grid-3col{
     grid-template-columns: 1fr 2fr 1fr;
 }
+
+.grid-4col{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /*************************** SWATCHES ***************************/
 .swatches{
     justify-content: center;
@@ -92,7 +103,7 @@ main{
     width: 8rem;
     aspect-ratio: 1 / 1;
     border-radius: 100%;
-    box-shadow: 0 0.1rem 0.2rem 0.2rem rgba(54, 48, 41, 0.2);
+    box-shadow: var(--shadow-dark);
 }
 
 .swatch .swatch-name{
@@ -107,11 +118,6 @@ main{
     cursor: pointer;
 }
 
-.btn:hover{
-    background-color: var(--dark);
-    color: var(--light);
-}
-
 .btn-primary{
     background-color: var(--primary);
     color: var(--light);
@@ -122,6 +128,24 @@ main{
     color: var(--dark);
 }
 
+.btn-primary:hover{
+    background-color: var(--primary-light);
+    color: var(--light);
+}
+
+
+.btn-secondary:hover{
+    background-color: var(--muted-light);
+}
+
+.btn-primary:active{
+    background-color: var(--primary-dark);
+}
+
+.btn-secondary:active{
+    background-color: var(--muted-dark);
+}
+
 .link{
     color: var(--primary);
     text-decoration: underline;
@@ -129,4 +153,30 @@ main{
 
 .link:hover{
     color: var(--dark);
+}
+/*************************** PRODUCTS ***************************/
+.product-image{position: relative;}
+
+.product-image{
+    outline: 3px solid var(--light);
+    box-shadow: var(--shadow-dark);
+    border-radius: var(--space-1);
+}
+
+.product-image .product-tag{
+    background-color: var(--dark);
+    color: var(--light);
+
+    padding: var(--space-1)/2;
+    border-radius: var(--space-1);
+
+    position: absolute;
+    top: var(--space-2);
+    left: var(--space-2);
+}
+
+.product-image img{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    object-fit: cover;
 }
