@@ -155,12 +155,16 @@ main{
     color: var(--dark);
 }
 /*************************** PRODUCTS ***************************/
-.product-image{position: relative;}
-
 .product-image{
+    position: relative;
     outline: 3px solid var(--light);
     box-shadow: var(--shadow-dark);
     border-radius: var(--space-1);
+}
+
+.product-image:hover{
+    width: 105%;
+    height: 105%;
 }
 
 .product-image .product-tag{
