@@ -6,36 +6,36 @@
     <title>Style Guide</title>
     </head>
     <body>
-        <main class="bg-dark">
+        <main class="container bg-dark">
             <div class="bg-light p-3">
             <h1>Coffee Shop Style Guide</h1>
             <p>Design tokens and reusable styles for the website.</p>
             <hr>
             <!-- Palette wooooow -->
-                <section id="colors">
+                <section id="colors" class="m-2 p-2 shadow-dark">
                         <h2>Color Palette</h2>
                         <article class="swatches d-flex gap-2">
                             <!-- Swatch 1 -->
                             <div class="swatch">
-                                <div class="swatch-value bg-primary">
+                                <div class="swatch-value bg-primary shadow-dark">
                                 </div>
                                 <p class="swatch-name"><br><hr>Primary</p>
                             </div>
                             <!-- Swatch 2 -->
                             <div class="swatch">
-                                <div class="swatch-value bg-light">
+                                <div class="swatch-value bg-light shadow-dark">
                                 </div>
                                 <p class="swatch-name"><br><hr>Light</p>
                             </div>
                             <!-- Swatch 3 -->
                             <div class="swatch">
-                                <div class="swatch-value bg-dark">
+                                <div class="swatch-value bg-dark shadow-dark">
                                 </div>
                                 <p class="swatch-name"><br><hr>Dark</p>
                             </div>
                             <!-- Swatch 4 -->
                             <div class="swatch">
-                                <div class="swatch-value bg-muted">
+                                <div class="swatch-value bg-muted shadow-dark">
                                 </div>
                                 <p class="swatch-name"><br><hr>Muted</p>
                             </div>
@@ -43,7 +43,7 @@
                 </section>
             <br><hr>
             <!-- Typography ooooooooh -->
-            <section id="typography">
+            <section id="typography" class="m-2 p-2 shadow-dark">
                     <h2>Typography</h2>
                     <h1 class="heading-xl">Heading XL - Coffee Shop</h1>
                     <h2 class="heading-lg">Heading LGBT - Freshly Brewed</h2>
@@ -51,14 +51,14 @@
                     <p class="text-muted bg-dark">Pour it in a cup...</p>
             </section>
             <!-- Spacing yaaaaaaaaaay -->
-            <section id="spacing">
+            <section id="spacing" class="m-2 p-2 shadow-dark">
                 <h2>Spacing</h2>
                 <div class="bg-muted p-0 m-1 left-align">.p-0 - No Padding</div>
                 <div class="bg-muted p-1 m-1 left-align">.p-1 - Half Padding</div>
                 <div class="bg-muted p-2 m-1 left-align">.p-2 - Normal Padding</div>
                 <div class="bg-muted p-3 m-1 left-align">.p-3 - Double Padding</div>
             </section>
-            <section id="layout">
+            <section id="layout" class="m-2 p-2 shadow-dark">
                 <h2>Layout Utils</h2>
                 <div class="d-flex flex-between">
                     <strong>Label</strong> <!-- Bold -->
@@ -74,46 +74,56 @@
                     <div class="bg-muted p-2">Column 3</div>
                 </div>
             </section>
-            <section id="buttons">
+            <section id="buttons" class="m-2 p-2 shadow-dark">
                 <h2>Buttons and Links</h2>
                 <button class="btn btn-primary">Primary Button</button>
                 <button class="btn btn-secondary">Secondary Button</button>
                 <a href="https://parahumans.wordpress.com/2011/06/11/1-1/" class="link">Link</a>
             </section>
-            <section id="components">
+            <section id="components" class="m-2 p-2 shadow-dark">
                 <h2>Components</h2>
                 <!-- PRODUCT IMAGES YUM -->
+                    <p>PRODUCTS</p>
                  <div class="grid grid-4col gap-3">
-                 <figure class="product-image">
+                 <figure class="product-image shadow-dark">
                     <img src="assets/jade-jade-harley.gif">
-                    <figcaption class="product-tag">50% off - &euro;50</figcaption>
+                    <figcaption class="product-tag shadow-light">50% off - &euro;50</figcaption>
+                    <p>Tag Styles</p>
+                    <ul class="tags m-1">
+                        <li class="tag-item">Tag 1</li>
+                        <li class="tag-item">Tag 2</li>
+                    </ul>
+                    <div class="tags m-1">
+                        <a href="#" class="tag-item">Tag 1</a>
+                        <a href="#" class="tag-item">Tag 2</a>
+                    </div>
                  </figure>
-                 <figure class="product-image">
+                 <figure class="product-image shadow-dark">
                     <img src="assets/Illustration.png">
-                    <figcaption class="product-tag">EXCLUSIVE, G CRYING - &euro;999</figcaption>
+                    <figcaption class="product-tag shadow-light">EXCLUSIVE, G CRYING - &euro;999</figcaption>
                  </figure>
-                 <figure class="product-image">
+                 <figure class="product-image shadow-dark">
                     <img src="assets/sonic-the-hedgehog-meme.gif">
-                    <figcaption class="product-tag">Freaky Sonic - Free, please take him</figcaption>
+                    <figcaption class="product-tag shadow-light">Freaky Sonic - Free, please take him</figcaption>
                  </figure>
-                 <figure class="product-image">
+                 <figure class="product-image shadow-dark">
                     <img src="assets/7a8d0e4eb5e5ebed3d078595da7aecb7-979185307.jpg">
-                    <figcaption class="product-tag">Rika - 10 Bottles of Wine</figcaption>
+                    <figcaption class="product-tag shadow-light">Rika - 10 Bottles of Wine</figcaption>
                  </figure>
-                 <figure class="product-image">
+                 <figure class="product-image shadow-dark">
                     <img src="assets/0e4dbb5034fe26e1e3faed5599544c25.jpg">
-                    <figcaption class="product-tag">wwhat</figcaption>
+                    <figcaption class="product-tag shadow-light">wwhat</figcaption>
                  </figure>
-                 <figure class="product-image">
+                 <figure class="product-image shadow-dark">
                     <img src="assets/5a38a6077eb3115b5ab1da7825d80032.jpg">
                  </figure>
-                 <figure class="product-image">
+                 <figure class="product-image shadow-dark">
                     <img src="assets/8bdc50c5aa22ebaef473bd2f4b38f9ec.jpg">
-                    <figcaption class="product-tag">Gay cat - 1 Bear</figcaption>
+                    <figcaption class="product-tag shadow-light">Gay cat - 1 Bear</figcaption>
                  </figure>
-                 <figure class="product-image">
+                 <figure class="product-image shadow-dark">
                     <img src="assets/afdd42e34be82fa87eb6569c9d71a268.jpg">
-                    <figcaption class="product-tag">Rika, again - 10 Bottles of Wine</figcaption>
+                    <figcaption class="product-tag shadow-light">Rika, again - 10 Bottles of Wine</figcaption>
                  </figure>
                  </div>
             </section>
