@@ -132,11 +132,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .grid-3col{
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-4col{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 /*************************** PRODUCTS ***************************/
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6{
 
 .product-image:hover{
     width: 105%;
-    height: 105%;
+    transform: translateX(-2%) translateY(-2%);
 }
 
 .product-image .product-tag{
@@ -201,4 +201,33 @@ h1, h2, h3, h4, h5, h6{
 
 .swatch .swatch-name{
     text-align: center;
+}
+
+/*************************** TEXT ***************************/
+.single-line{
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-orient: vertical;
+    -webkit-line-clamp: 1;
+    -moz-box-orient: vertical;
+    -moz-line-clamp: 1;
+    line-clamp: 1;
+
+    height: 1.5em;
+    overflow: clip;
+    text-overflow: ellipsis;
+}
+
+.double-line{
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-orient: vertical;
+    -webkit-line-clamp: 2;
+    -moz-box-orient: vertical;
+    -moz-line-clamp: 2;
+    line-clamp: 2;
+
+    height: 3em;
+    overflow: clip;
+    text-overflow: ellipsis;
 }
