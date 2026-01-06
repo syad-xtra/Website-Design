@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form action="mailto:info@mcast.com" method="post" enctype="text/plain" class="contact-form">
+        <div>
+            <label for="input-topic">Topic:</label>
+            <select name="topic" id="input-topic" required>
+                <option value="" disabled selected>Choose a Topic</option>
+                <option value="I love coffee">I love coffee</option>
+                <option value="I love coffee">I hate coffee</option>
+            </select>
+        </div>
+        <div><label for="input-name">Name:</label>
+        <input type="text" name="name" id="input-name" placeholder="John Borg" required>
+        </div>
+        <div>
+            <label for="input-message">Your message:</label>
+            <textarea name="message" id="input-message"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-secondary" type="reset">Reset</button>
+    </form>
+</body>
+</html>
